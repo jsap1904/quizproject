@@ -6,51 +6,78 @@
 	<!-- CSS LINK -->
 		<link rel="stylesheet" href="css/animate.css">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/main.css">
-		<title>Quiz</title>
+		<title>quiz</title>
+		<link rel="shortcut icon" href="img/favicon.png">
 
 		
 	</head>
 <!-- BODY  -->
 	<body>
 		<div class="container">
-			<h1 class="title">Quiz</h1>
+			<span id="animationSandBox" style="display: block">
+			<h1 id="title" class="animated pulse infinite">quiz</h1></span>
 				<div class="row">
 					<form class="col-sm-7">
 						<div class="form-group">
 							<h4 id="question0"></h4>
-								<input id="answer0" type="text" class="form-control">
+								<input id="answer0" type="text" class="form-control" placeholder="its like a pie">
 						</div>
 						<div class="form-group">
 							<h4 id="question1"></h4>
-								<input id="answer1" type="text" class="form-control">
+								<input id="answer1" type="text" class="form-control" placeholder="not white">
 						</div>
 						<div class="form-group">
 							<h4 id="question2"></h4>
-								<input id="answer2" type="text" class="form-control">
+								<input id="answer2" type="text" class="form-control" placeholder="he was bit by a spider">
 						</div>
 						<div class="form-group">
 							<h4 id="question3"></h4>
-								<input id="answer3" type="text" class="form-control">
+								<input id="answer3" type="text" class="form-control" placeholder="2 seater honda convertible">
 						</div>
 						<div class="form-group">
 							<h4 id="question4"></h4>
-								<input id="answer4" type="text" class="form-control">
+								<input id="answer4" type="text" class="form-control" placeholder="what do monkeys do?">
 						</div>
 						<div class="form-group">
 							<h4 id="question5"></h4>
-								<input id="answer5" type="text" class="form-control">
+								<input id="answer5" type="text" class="form-control" placeholder="long and foxy">
 						</div>
 						<br>
-							<button type="button" onclick="testResults()" class="btn btn-primary btn-lg">See Results</button>
+							
 					</form>
-							<div class=" col=sm-2 col-sm-ofset-1">
-							<h1 class="correct">Correct: <span id="correct"></span></h1>
-							<h1 class="incorrect">Incorrect:  <span id="incorrect"></span></h1>
-							</div>
+
+
+						
 				</div>
 		</div>
+
+
+
+ <!-- Small modal -->
+<button type="button" onclick="testResults()" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">Results</button>
+
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      	<div class=" col=sm-2 col-sm-ofset-1">
+			<h1 class="correct">Correct: <span id="correct"></span></h1>
+			<h1 class="incorrect">Incorrect:  <span id="incorrect"></span></h1>
+		</div>
+    </div>
+  </div>
+</div>
+ 
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+  		<script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
+
 	</body>
-<!-- 	BODY END -->
+
 </html>
+

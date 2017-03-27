@@ -1,4 +1,30 @@
 body {
 	text-align: center;
 	color: red;
+	background-image: url(../img/modalbg.jpg);
+	background-size:initial;
+	background-repeat:no-repeat;
+	background-position: right;
+	z-index: 50;
+}
+
+#title {
+	font-family: 'Cinzel', serif;
+	font-weight: bold;
+	font-size: 50px;
+
+}
+
+h4 {
+	text-align: left;
+}
+
+.modal-content {
+	font-family: 'Cinzel', serif;
+
+}
+
+.correct {
+	color: blue;
+	font-weight: bold;
 }
